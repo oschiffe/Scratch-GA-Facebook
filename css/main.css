@@ -1,0 +1,786 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+*{
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    background-color: #e0e0e0;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+}
+
+header {
+    background-color: #3b5999;
+    height: 43px;
+    width: 100%;
+    float: top;
+}
+
+.sidebar {
+    margin-top: -45px;
+}
+
+div.logo {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/F_icon_reversed.svg/1024px-F_icon_reversed.svg.png);
+    height: 25px;
+    width: 25px;
+    z-index: 1000;
+    position: relative top: 10px;
+    margin-left: 76px;
+    margin-top: -34px;
+}
+
+#masthead {
+    content: url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/11034041_1712561725630518_5297982420503090746_n.jpg?oh=94d7702efe3b12338c7b62a8a584e960&oe=5832B0EC);
+    margin-left: 76px;
+    margin-top: 8.5px;
+    height: 313px;
+    width: 827px;
+    z-index: 0;
+    border: solid #999a9e .5px;
+    border-radius: 2px;
+}
+
+div.gaLogo {
+    content: url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/20095_1671217333098291_4651867559754203405_n.png?oh=1fa6d4ff9662f00743b5051991755b8a&oe=583586E4);
+    height: 168px;
+    width: 168px;
+    border: solid #dbdcdd .5px;
+    border-radius: 5px;
+    margin-left: 94px;
+    margin-top: -141px;
+    position: absolute;
+}
+
+#searchBar {
+    height: 25px;
+    width: 401px;
+    margin-left: 107px;
+    background-color: #ffffff;
+    border-radius: .5px;
+    position: absolute;
+    margin-top: -34px;
+    border: none;
+}
+
+#menu {
+    height: 50px;
+    width: 827px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 76px;
+    margin-top: -6px;
+}
+
+#genre {
+    height: 42px;
+    width: 311px;
+    background-color: #ffffff;
+    margin-top: 12px;
+    margin-left: 76px;
+    border: solid #dbdcdd .5px;
+    border-radius: .25px;
+    padding: 13px 0px 0px 10px;
+    font-size: 13.5px;
+}
+
+#searchForPosts {
+    height: 35px;
+    width: 310px;
+    background-color: #ffffff;
+    border: solid #dbdcdd .5px;
+    border-radius: .5px;
+    margin-top: 14px;
+    margin-left: 76px;
+    margin-bottom: 14px;
+    padding: 10px 0px 0px 34px;
+    font-size: 13.5px;
+    color: #777777;
+}
+
+.table {
+    height: 46px;
+    width: 259px;
+    background-color: #ffffff;
+    border: solid #dbdcdd .5px;
+    border-radius: .5px;
+    margin-left: 127px;
+    margin-top: -1px;
+    padding: 13px 0px 0px 10px;
+    font-size: 12px;
+}
+
+.table:hover {
+    text-decoration: underline;
+}
+
+#about {
+    height: 35px;
+    width: 310px;
+    background-color: #f7f7f7;
+    border: solid #dbdcdd .5px;
+    border-radius: .5px;
+    margin-top: 14px;
+    margin-left: 76px; 
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#about:hover {
+    cursor: pointer;
+}
+
+#sidebarPeopleIcon {
+    content: url(http://i.imgur.com/KHgD9Dw.png);
+    height: 44px;
+    width: 52px;
+    margin-left: 76px;
+    margin-top: -184px;
+}
+
+#sidebarLocationIcon {
+    content: url(http://i.imgur.com/xFMaCmp.png);
+    height: 44px;
+    width: 52px;
+    margin-left: 76px;
+    margin-top: 1px;    
+}
+
+#sidebarInviteFriendsIcon {
+    content: url(http://i.imgur.com/49UBXQX.png);
+    height: 44px;
+    width: 52px;
+    margin-left: 76px;
+    margin-top: 1px;       
+}
+
+#sidebarSearch {
+    content: url(http://i.imgur.com/kHqhlT1.png);
+    height: 32px;
+    width: 30px;
+    margin-left: 76px;
+    margin-top: -182px;
+
+}
+
+.nav {
+    height: 44px;
+    width: 64px;
+    display: inline;
+    background-color: #ffffff;
+    padding: 0;
+    border: none;
+    background: none;
+    position: relative;
+    top: -46px;
+    left: 275px;    
+    z-index: 1;
+    font-size: 14px;
+    color: #464746;
+}
+
+.nav:after {
+    border-right: .5px solid #dbdcdd;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    height: 60%;
+    padding-left: 12px;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+#more:after {
+    border: none;
+}
+
+#more:hover {
+    cursor: pointer;
+}
+
+#homeUnderline {
+    height: 3px;
+    width: 45px;
+    background-color: #3b5999;
+    position: relative;
+    top: -48px;
+    left: 285px;
+    font-weight: bold;
+}
+
+#home {
+    font-weight: bold;
+}
+
+.triangle {
+    width:0; 
+    border-top: 6px solid #464746; 
+    border-left: 5px solid #ffffff; 
+    border-right: 5px solid #ffffff;
+    margin-left: 605px;
+    margin-top: -73px;
+    position: absolute;
+}
+
+.masthead {
+    display: inline-block;
+    height: 26px;
+    border: solid #dbdcdd .5px;
+    background-color: #f7f7f7;
+    position: relative;
+    top: -183px;
+    left: 607px;  
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #3d3d3d;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.masthead img {
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    top: 1px;
+    left: 0px;
+}
+
+.last {
+    background-color: #f7f7f7;
+    height: 26px;
+    width: 40px;
+    position: relative;
+    border: none;
+    z-index: 1000;
+    padding: 0;
+    top: -184px;
+    left: 601px; 
+}
+
+.masthead:hover {
+    background-color: #ededed;
+}
+
+.last:hover {
+    background-color: #ededed;
+}
+
+#title {
+    height: 60px;
+    width: 220px;
+    font-size: 22px;
+    position: absolute;
+    top: 265px;
+    left: 275px;
+    z-index: 1000;
+    color: #ffffff;
+}
+
+#subtitle {
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    top: 325px;
+    left: 275px;
+    z-index: 1000;
+    color: #ffffff;
+}
+
+#statusBar {
+    height: 34px;
+    width: 502px;
+    background-color: #eff3f9;
+    position: relative;
+    left: 403px;
+    top: -115px;
+}
+
+.statusBarLinks {
+    display: inline;
+    height: 32px;
+    background-color: #eff3f9;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+.statusBarLinks:hover {
+    cursor: pointer;
+}
+
+#bluePhotoText {
+    color: #3b5999;
+}
+
+.profileTriangle {
+    background-color: #eff3f9;
+    border: none;
+    margin-left: 260px;
+}
+
+.writeSomething {
+    height: 70px;
+    width: 502px;
+    background-color: #ffffff;
+    position: relative;
+    top: -115px;
+    left: 403px;
+    padding-left: 62px;
+    padding-top: 23px;
+    font-size: 12px;
+    color: #777777;
+}
+
+#writeSomeProf {
+    height: 40px;
+    width: 42px;
+    position: relative;
+    left: -52px;
+    top: -29px;
+}
+
+#whiteTri {
+    z-index: 1000;
+    width:0; 
+    border-bottom: 7px solid #ffffff; 
+    border-left: 7px solid #eff3f9; 
+    border-right: 7px solid #eff3f9;
+    margin-left: 450px;
+    margin-bottom: -73px;
+    position: absolute;
+    margin-top: -122px;
+}
+
+.changeCareers {
+    height: 245px;
+    width: 502px;
+    position: relative;
+    top: -100px;
+    left: 403px;
+    background-color: #ffffff;
+    font-size: 12px;
+    padding-left: 12px;
+    padding-top: 66px;
+}
+
+#careerImg {
+    height: 160px;
+    width: 476px;
+    position: absolute;
+    top: 90px;
+    left: 12px;
+}
+
+#downArrow{
+    height: 12px;
+    width: 12px;
+    padding-left: -10px;
+    background: url('http://i.imgur.com/Db8TBBT.png');
+    background-position:center;
+    border: none;
+    position:absolute;
+    top: 10px;
+    left: 480px;
+    z-index: 1000;
+}
+
+#gaTitle {
+    margin-top: -50px;
+    color: #3b5999;
+    font-size: 14px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+#gaTitle:hover {
+    text-decoration: underline;;
+}
+
+#time {
+    font-size: 10px;
+    color: #777777;
+    padding-left: 53px;
+    padding-bottom: 22px;
+}
+
+#smallIcon {
+    content: url('https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/20095_1671217333098291_4651867559754203405_n.png?oh=1fa6d4ff9662f00743b5051991755b8a&oe=583586E4');
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    top: 8px;
+}
+
+#rightArrow {
+    content: url('http://i.imgur.com/bF2X0PD.png');
+    height: 12px;
+    width: 10px;
+    margin-left: 280px;
+    margin-top: -8px;
+}
+
+#worldIcon {
+    display: inline;
+    content: url('http://i.imgur.com/1y90MkE.png');
+    height: 12px;
+    width: 12px;
+}
+
+#map {
+    content: url('http://i.imgur.com/v7YQYBC.png');
+    height: 76px;
+    width: 310px;
+    position: absolute;
+    left: 76px;
+}
+
+.headerIcons {
+    height: 25px;
+    width: 25px;
+    display: inline;
+    border: none;
+    background-color: #3b5999;
+}
+ 
+#icons {
+    height: 30px;
+    width: 190px;
+    margin-left: 1115px;
+    padding-top: 8px;
+}
+
+#headWorld {
+    margin-right: 20px;
+}
+
+.headerIcons:hover {
+    cursor: pointer;
+}
+
+div section a {
+    text-decoration: none;
+    color: black;
+}
+
+header div span {
+    color: #344770;
+    font-size: 21px;
+    position: relative;
+    top: 4px;
+}
+
+header div button span {
+    position: relative;
+    z-index: 1000;
+    left: -20px;
+    top: -24px;
+    font-size: 22px;
+    color: #344770;
+}
+
+#headButtons {
+    height: 35px;
+    width: 150px;
+    background-color: #3b5999;
+    position: absolute;
+    left: 960px;
+    top: 8px;
+}
+
+.owenHome {
+    display: inline;
+    height: 27px;
+    width: 30px;
+    background-color: #3b5999;
+    border: none;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.owenHome:hover {
+    cursor: pointer;
+}
+
+#owen {
+    width: 70px;
+}
+
+#home {
+    width: 60px;
+    font-weight: normal;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== *
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
